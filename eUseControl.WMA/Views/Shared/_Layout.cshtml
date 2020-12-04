@@ -1,0 +1,45 @@
+﻿@using System.Web.Optimization
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Оружие и воинские доспехи Европы | @ViewBag.Title</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet" type="text/css">
+    @Styles.Render("~/bundles/mainelements/css")
+    @Styles.Render("~/bundles/Sliders/css")
+    @Styles.Render("~/bundles/tabs/css")
+    @Styles.Render("~/bundles/font-awesome/css")
+
+    <!-- Add local styles, mostly for plugins css file -->
+    @if (IsSectionDefined("Styles"))
+    {@RenderSection("Styles", required: false)}
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+    <div id="container">
+            @Html.Partial("_Header")
+            </div>
+
+            <!-- Main view -->
+            <section class="content">
+                @RenderBody()
+                <!-- Footer-->
+                @Html.Partial("_Footer")
+            </section>
+
+            <!-- Section for main scripts render -->
+            @Scripts.Render("~/bundles/validation/js")
+            @Scripts.Render("~/bundles/jquery/js")
+            @Scripts.Render("~/bundles/unobtrusive/js")
+            <!-- Handler for local scripts -->
+            @RenderSection("scripts", required: false)
+        </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+.Tab_menu > div, .Tab_menu > input { display: none; }
+
+.Tab_menu label {
+	position: relative;
+	box-sizing: border-box; 
+	width: 28%;
+	float: left;
+	height: 50px;
+ padding: 8px;
+ text-align: center;
+  
+
+
+
+
+ color: black;
+ padding-right: 40px;
+  margin-left: 4%;
+ border: 4px solid #222222; 
+ border-radius: 10px 0px 0px 10px;
+
+
+
+ cursor: pointer; 
+
+/* bottom: 1px; */
+ background: #4B514C; 
+transition: all 1s;
+ -webkit-clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
+ 
+
+ }
+
+  .Tab_menu{
+	  margin-top: 20px;
+	  width: 100%;
+  }
+ .Tab_menu  label:hover {
+ background: white;
+ box-shadow: 4px 4px 20px rgba(0,0,0,.8);
+ }
+
+.Tab_menu input[type="radio"]:checked  + label 
+{ box-shadow: 4px 4px 20px rgba(0,0,0,.8);
+ background: #e31e26; 
+ 
+
+
+ }
+
+.Tab_menu > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+.Tab_menu > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+.Tab_menu > input:nth-of-type(3):checked ~ div:nth-of-type(3)
+ 
+{ display: block; 
+padding: 25px; 
+ margin-top: 60px;
+border: 1px solid maroon;
+ }
+
+.Tab_menu ,p {
+	color: #A5A4A5;
+	text-align: justify;
+	padding: 2px;
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 15pt;
+	text-indent: 2em;
+	/*clear: both;*/
+}
+
+.Tab_menu, p: first-letter 
+ {
+	 font-size: 20pt;
+	 color: #e31e26;
+	
+ }
+
+}
+
+.one label{
+	 padding: 5px;
+ margin-left: 25px;
+ color: black;
+ padding-right: 30px;
+ border: 4px solid #222222; 
+ border-radius: 50%;
+
+
+}
+.Tab_menu img{
+	width:  initial;
+	height: initial;
+	float: right;
+	padding: 35px;
+	border-radius: 25px;
+}
+.Tab_menu li{
+	padding: 5px;
+	
+}
+
